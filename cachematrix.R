@@ -1,7 +1,7 @@
 ## Put comments here that give an overall description of what your
 ## functions do
 ## 
-##
+## FULL DISCLOSURE: to create this I copied all the code in the vector examples and edit for my needs. 
 ## for testing I used the data posted by TA Al Warren as follows: 
 # > m <- matrix(c(-1, -2, 1, 1), 2, 2)
 # > x <- makeCacheMatrix(m)
