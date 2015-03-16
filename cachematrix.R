@@ -2,8 +2,8 @@
 ## functions do
 ## 
 ##
-## for testing I used the data posted by TA Al Warren as follows: '
-#m <- matrix(c(-1, -2, 1, 1), 2, 2)
+## for testing I used the data posted by TA Al Warren as follows: 
+# > m <- matrix(c(-1, -2, 1, 1), 2, 2)
 # > x <- makeCacheMatrix(m)
 # > x$get()
 # [,1] [,2]
@@ -22,7 +22,7 @@
 # [2,]    2   -1
 ##
 ##
-## Write a short comment describing this function
+## 
 ## The point of this is to take a matrix of numbers (m in the example above) and create a cached version (x in the example above)
 ##that can be used to cache the inverted (inv in the example above) of the matrix.
 ## the variable "cachematrx" is used to hold the inverse which is create with the setinverse command. 
@@ -53,7 +53,8 @@ makeCacheMatrix <- function(x = matrix()) {
 ## this either gets cached inverse data for the matrix or will solve and cache depending the value in "cachemtrx" which is in the other function.
 ## the commands set, get, setinverse, getinverse are used in getting the cached inversion or setting it if it's not cached.
 ## 
-##
+## invmtrx is the variable that is returned. If getinverse() returns a value we use it, if not datatosolve is filled with a call to get() and 
+## we then use it as an arg to solve which has it's result assigned to invmtrx, then we call setinverse with invmtrx followed by invmtrx.
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
         invmtrx <- x$getinverse()
